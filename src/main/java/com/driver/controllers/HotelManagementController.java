@@ -25,6 +25,7 @@ public class HotelManagementController {
 
     HotelManagementServices hotelManagementServices = new HotelManagementServices();
 
+
     @PostMapping("/add-hotel")
     public String addHotel(@RequestBody Hotel hotel){
         return hotelManagementServices.addHotel(hotel);
